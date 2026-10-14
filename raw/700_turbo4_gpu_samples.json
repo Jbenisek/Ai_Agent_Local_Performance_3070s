@@ -1,0 +1,12 @@
+[
+  {
+    "elapsed_monitor_seconds": 0.2,
+    "gpu_csv": "0, 5696, 1\n1, 1396, 0\n2, 6368, 0\n3, 6368, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 29.74,
+      "totalPageFile": 61.37,
+      "availPageFile": 12.24
+    }
+  }
+]

@@ -1,0 +1,17 @@
+﻿workload,model_or_engine,quantization_or_mode,topology,metric,value,unit,requests_or_frames,notes,source
+llm,Qwen3.6-35B-A3B,llama.cpp Q4_K_M,4x RTX 3070 split 1/1/1/1,generated_rate,5.68,tok/s,1,before clock correction isolated request,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.6-35B-A3B,llama.cpp Q5,4x RTX 3070 split 1/1/1/1,generated_rate,5.18,tok/s,1,before clock correction isolated request,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.6-35B-A3B,llama.cpp Q4_K_M,4x RTX 3070 split 1/1/1/1,generated_rate,9.40,tok/s,4,before clock correction 4-request batch,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.6-35B-A3B,llama.cpp Q5,4x RTX 3070 split 1/1/1/1,generated_rate,8.61,tok/s,4,before clock correction 4-request batch,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.6-35B-A3B,llama.cpp Q4_K_M,4x RTX 3070 split 1/1/1/1,generated_rate,13.72,tok/s,40,sustained queued/rolling run before correction,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.6-35B-A3B,llama.cpp Q5,4x RTX 3070 split 1/1/1/1,generated_rate,13.67,tok/s,16,sustained queued/rolling run before correction,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.6-35B-A3B,llama.cpp Q4_K_M,4x RTX 3070 split 1/1/1/1,generated_rate,34.94,tok/s,1,after clock correction isolated request,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.6-35B-A3B,llama.cpp Q4_K_M,4x RTX 3070 split 1/1/1/1,generated_rate,66.72,tok/s,16,concurrency 4 after clock correction; aggregate rate,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.6-35B-A3B,llama.cpp Q4_K_M,4x RTX 3070 split 1/1/1/1,generated_tokens,10045,tokens,16,fast Q4 run in 150.55 s; all requests stopped,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.6-35B-A3B,llama.cpp Q5,4x RTX 3070 split 1/1/1/1,generated_tokens,11932,tokens,16,earlier rolling run in 872.56 s; 15 stopped and 1 hit length,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.8-27B,Hugging Face NF4 distributed,4x RTX 3070,elapsed_time,83.51,s,4,four-job warm comparison first run,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.8-27B,Hugging Face NF4 distributed,4x RTX 3070,elapsed_time,80.85,s,4,four-job warm comparison second run,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.8-27B,Hugging Face NF4 donor staging,4x RTX 3070,elapsed_time,1764.36,s,4,donor staging first run,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.8-27B,Hugging Face NF4 donor staging,4x RTX 3070,elapsed_time,1662.30,s,4,donor staging second run,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.8-27B,llama.cpp Q3_K_XL plus MTP draft length 2,3 GPUs,elapsed_time,25.20,s,4,warm comparison first run,MODEL_PERFORMANCE_REPORT.md
+llm,Qwen3.8-27B,llama.cpp Q3_K_XL plus MTP draft length 2,3 GPUs,elapsed_time,21.29,s,4,warm comparison second run,MODEL_PERFORMANCE_REPORT.md

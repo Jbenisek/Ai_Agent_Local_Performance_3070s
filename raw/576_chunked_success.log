@@ -1,0 +1,144 @@
+[32m[INFO][0m setup plugin alembic.autogenerate.schemas
+[32m[INFO][0m setup plugin alembic.autogenerate.tables
+[32m[INFO][0m setup plugin alembic.autogenerate.types
+[32m[INFO][0m setup plugin alembic.autogenerate.constraints
+[32m[INFO][0m setup plugin alembic.autogenerate.defaults
+[32m[INFO][0m setup plugin alembic.autogenerate.comments
+[32m[INFO][0m setup plugin alembic.autogenerate.checkconstraint_byname
+[32m[INFO][0m Set cuda devices to all
+[1m[33m[WARNING][0m WARNING: You need pytorch with cu130 or higher to use optimized CUDA operations.
+WARNING WARNING WARNING
+If you are on nvidia 20 series and above it is required that you update your pytorch to cu130 or higher.
+
+[32m[INFO][0m Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_embedding', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'gemv_awq_w4a16', 'int8_linear', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'stochastic_rounding_fp8', 'w4a8_int8_linear']}
+[32m[INFO][0m Found comfy_kitchen backend hip: {'available': False, 'disabled': False, 'unavailable_reason': 'PyTorch ROCm/HIP runtime not available', 'capabilities': []}
+[32m[INFO][0m Found comfy_kitchen backend triton: {'available': False, 'disabled': True, 'unavailable_reason': "ImportError: No module named 'triton'", 'capabilities': []}
+[32m[INFO][0m Found comfy_kitchen backend cuda: {'available': True, 'disabled': True, 'unavailable_reason': None, 'capabilities': ['adaln', 'apply_rope', 'apply_rope1', 'apply_rope1_', 'apply_rope_', 'apply_rope_split_half', 'apply_rope_split_half1', 'apply_rope_split_half1_', 'apply_rope_split_half_', 'convrot_w4a4_linear', 'dequantize_convrot_w4a4_weight', 'dequantize_int8_convrot_weight', 'dequantize_int8_convrot_weight_dtype', 'dequantize_int8_simple', 'dequantize_int8_simple_dtype', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'dequantize_w4a8_int8_weight', 'gemv_awq_w4a16', 'na3d', 'prepare_int4_weight_for_int8_linear', 'quantize_and_rotate_rowwise', 'quantize_convrot_w4a4_weight', 'quantize_int8_convrot_weight', 'quantize_int8_rowwise', 'quantize_int8_tensorwise', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'quantize_w4a8_int8_weight', 'rms_adaln', 'rms_rope', 'rms_rope1', 'rms_rope1_', 'rms_rope_', 'rms_rope_split_half', 'rms_rope_split_half1', 'rms_rope_split_half1_', 'rms_rope_split_half_', 'rotate_int8_convrot_weight', 'scaled_mm_svdquant_w4a4', 'stochastic_rounding_fp8', 'w4a8_int8_linear']}
+[32m[INFO][0m Checkpoint files will always be loaded safely.
+[32m[INFO][0m Total VRAM 8192 MB, total RAM 49024 MB
+[32m[INFO][0m pytorch version: 2.13.0+cu126
+[32m[INFO][0m Set vram state to: NORMAL_VRAM
+[32m[INFO][0m Device: cuda:0 NVIDIA GeForce RTX 3070 : native
+[32m[INFO][0m Device: cuda:1 NVIDIA GeForce RTX 3070 : native
+[32m[INFO][0m Device: cuda:2 NVIDIA GeForce RTX 3070 : native
+[32m[INFO][0m Device: cuda:3 NVIDIA GeForce RTX 3070 : native
+[32m[INFO][0m Device: cuda:4 NVIDIA GeForce RTX 3070 : native
+[32m[INFO][0m Using pytorch attention
+[32m[INFO][0m Python version: 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]
+[32m[INFO][0m ComfyUI version: 0.34.0
+[32m[INFO][0m comfy-aimdo version: 0.4.15
+[32m[INFO][0m comfy-kitchen version: 0.2.31
+[1m[33m[WARNING][0m Dynamic vram disabled with argument. If you have any issues with dynamic vram enabled please give us a detailed reports as this argument will be removed soon. If you use gguf we recommend keeping dynamic vram enabled and using native ComfyUI model formats instead. ComfyUI native formats like fp8 will be faster even if they are larger than your memory.
+[32m[INFO][0m comfyui-frontend-package version: 1.49.6
+[32m[INFO][0m comfyui-workflow-templates version: 0.11.48
+[32m[INFO][0m comfyui-embedded-docs version: 0.5.10
+[32m[INFO][0m comfy-kitchen version: 0.2.31
+[32m[INFO][0m comfy-aimdo version: 0.4.15
+[32m[INFO][0m [Prompt Server] web root: C:\Projects\video_render\_local_video_pipeline\h3_setup\ComfyUI_windows_portable\python_embeded\Lib\site-packages\comfyui_frontend_package\static
+[32m[INFO][0m Asset seeder disabled
+[32m[INFO][0m No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+[32m[INFO][0m [ClipProj] graph watch installed
+[32m[INFO][0m [ClipProj] unload hook installed
+[32m[INFO][0m [MultiGPU Core Patching] Patching mm.soft_empty_cache for Comprehensive Memory Management (VRAM + CPU + Store Pruning)
+[MultiGPU Core Patching] Patching mm.get_torch_device, mm.text_encoder_device, mm.unet_offload_device
+[MultiGPU DEBUG] Initial current_device: cuda:0
+[MultiGPU DEBUG] Initial current_text_encoder_device: cuda:0
+[MultiGPU DEBUG] Initial current_unet_offload_device: cpu
+[MultiGPU] Patched comfy.model_management.current_stream to honor CUDA device arguments
+[MultiGPU] Patched comfy.sample.sample with runtime device guard
+[MultiGPU] Patched comfy.sample.sample_custom with runtime device guard
+[MultiGPU] Applied comfy_kitchen CUDA DLPack device guard patch (P2P-aware)
+[MultiGPU] DynamicVRAM not enabled; skipping multi-device aimdo initialization
+[MultiGPU] Initiating custom_node Registration. . .
+-----------------------------------------------
+custom_node                   Found     Nodes
+-----------------------------------------------
+ComfyUI-LTXVideo                  N         0
+ComfyUI-Florence2                 N         0
+ComfyUI_bitsandbytes_NF4          N         0
+x-flux-comfyui                    N         0
+ComfyUI-MMAudio                   N         0
+ComfyUI-GGUF                      N         0
+PuLID_ComfyUI                     N         0
+ComfyUI-WanVideoWrapper           N         0
+-----------------------------------------------
+[MultiGPU] Registration complete. Final mappings: CheckpointLoaderAdvancedMultiGPU, CheckpointLoaderAdvancedDisTorch2MultiGPU, DeviceSelectorMultiGPU, UNetLoaderLP, UNETLoaderMultiGPU, VAELoaderMultiGPU, CLIPLoaderMultiGPU, DualCLIPLoaderMultiGPU, TripleCLIPLoaderMultiGPU, QuadrupleCLIPLoaderMultiGPU, CLIPVisionLoaderMultiGPU, CheckpointLoaderSimpleMultiGPU, ControlNetLoaderMultiGPU, DiffusersLoaderMultiGPU, DiffControlNetLoaderMultiGPU, UNETLoaderDisTorch2MultiGPU, VAELoaderDisTorch2MultiGPU, CLIPLoaderDisTorch2MultiGPU, DualCLIPLoaderDisTorch2MultiGPU, TripleCLIPLoaderDisTorch2MultiGPU, QuadrupleCLIPLoaderDisTorch2MultiGPU, CLIPVisionLoaderDisTorch2MultiGPU, CheckpointLoaderSimpleDisTorch2MultiGPU, ControlNetLoaderDisTorch2MultiGPU, DiffusersLoaderDisTorch2MultiGPU, DiffControlNetLoaderDisTorch2MultiGPU
+[32m[INFO][0m 
+Import times for custom nodes:
+[32m[INFO][0m    0.0 seconds: C:\Projects\video_render\_local_video_pipeline\h3_setup\ComfyUI_windows_portable\ComfyUI\custom_nodes\websocket_image_save.py
+[32m[INFO][0m    0.0 seconds: C:\Projects\video_render\_local_video_pipeline\h3_setup\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-MiniMax-H3-Turbo
+[32m[INFO][0m    0.0 seconds: C:\Projects\video_render\_local_video_pipeline\h3_setup\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-ClipProj
+[32m[INFO][0m    0.0 seconds: C:\Projects\video_render\_local_video_pipeline\h3_setup\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-MultiGPU
+[32m[INFO][0m    0.1 seconds: C:\Projects\video_render\_local_video_pipeline\h3_setup\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-Spectrum-MiniMax-H3
+[32m[INFO][0m 
+[32m[INFO][0m Context impl SQLiteImpl.
+[32m[INFO][0m Will assume non-transactional DDL.
+[32m[INFO][0m Using RAM pressure cache.
+[32m[INFO][0m Starting server
+
+[32m[INFO][0m To see the GUI go to: http://127.0.0.1:8188
+[32m[INFO][0m got prompt
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m VAE load device: cuda:0, offload device: cpu, dtype: torch.float16
+[MultiGPU Issue21] Registered ModelPatcherDynamic._load_list guard
+[32m[INFO][0m Found quantization metadata version 1
+[MultiGPU Core Patching] text_encoder_device_patched returning device: cuda:0 (current_text_encoder_device=cuda:0)
+[32m[INFO][0m Using MixedPrecisionOps for text encoder
+[32m[INFO][0m CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[32m[INFO][0m [ClipProj] mmh3-4b-ClipProj-v3-mlp.safetensors | tap 24 | 2560 -> 5120 | residual only | cos_test 0.8144
+[32m[INFO][0m Requested to load Krea2TEModel_
+[32m[INFO][0m loaded completely; 5680.80 MB usable, 5125.01 MB loaded, full load: True
+[MultiGPU Core Patching] Successfully patched ModelPatcher.partially_load
+[32m[INFO][0m Found quantization metadata version 1
+[32m[INFO][0m Detected mixed precision quantization
+[32m[INFO][0m Using mixed precision operations
+[32m[INFO][0m Native ops: convrot_w4a4, int8_tensorwise, asym_w4a8_int8 , emulated ops: nvfp4, mxfp8, float8_e5m2, float8_e4m3fn
+[32m[INFO][0m model weight dtype torch.bfloat16, manual cast: torch.bfloat16
+[32m[INFO][0m model_type FLOW_AV
+[MultiGPU DisTorch V2] Full allocation string: cuda:1,1gb;cuda:2,6gb;cuda:3,6gb;cuda:0,1gb;cuda:4,*#cuda:1
+[32m[INFO][0m Requested to load MiniMaxH3
+[MultiGPU DisTorch V2] Assigning 1024.00MB of model to cuda:1 (requested 1024.00MB).
+[MultiGPU DisTorch V2] Assigning 6144.00MB of model to cuda:2 (requested 6144.00MB).
+[MultiGPU DisTorch V2] Assigning 6144.00MB of model to cuda:3 (requested 6144.00MB).
+[MultiGPU DisTorch V2] Assigning 1024.00MB of model to cuda:0 (requested 1024.00MB).
+[MultiGPU DisTorch V2] Assigning remaining 5660.14MB of model to wildcard device 'cuda:4'.
+==================================================
+[MultiGPU DisTorch V2] Final Allocation String:
+cuda:1,0.1250;cuda:2,0.7500;cuda:3,0.7500;cuda:0,0.1250;cuda:4,0.6910;cpu,0.0
+==================================================
+    DisTorch2 Model Device Allocations
+==================================================
+Device    VRAM GB    Dev %   Model GB    Dist %
+--------------------------------------------------
+cuda:0       8.00    12.5%       1.00      5.1%
+cuda:1       8.00    12.5%       1.00      5.1%
+cuda:2       8.00    75.0%       6.00     30.7%
+cuda:3       8.00    75.0%       6.00     30.7%
+cuda:4       8.00    69.1%       5.53     28.3%
+cpu         47.87     0.0%       0.00      0.0%
+--------------------------------------------------
+    DisTorch2 Model Layer Distribution
+--------------------------------------------------
+Layer Type         Layers   Memory (MB)   % Total
+--------------------------------------------------
+Linear                264      19995.03    100.0%
+RMSNorm               210          1.11      0.0%
+--------------------------------------------------
+DisTorch2 Model Final Device/Layer Assignments
+--------------------------------------------------
+Device             Layers   Memory (MB)   % Total
+--------------------------------------------------
+cuda:1 (<0.01%)       265         87.00      0.4%
+cuda:0                 11        992.87      5.0%
+cuda:1                 12        992.86      5.0%
+cuda:2                 66       6141.16     30.7%
+cuda:3                 67       6141.12     30.7%
+cuda:4                 53       5641.13     28.2%
+--------------------------------------------------
+[MultiGPU DisTorch V2] DisTorch loading completed.
+[MultiGPU DisTorch V2] Total memory: 19996.14MB
+  0%|          | 0/6 [00:00<?, ?it/s] 17%|#6        | 1/6 [02:21<11:46, 141.27s/it] 33%|###3      | 2/6 [04:35<09:08, 137.24s/it] 50%|#####     | 3/6 [06:52<06:50, 136.82s/it] 67%|######6   | 4/6 [09:08<04:32, 136.50s/it] 83%|########3 | 5/6 [11:22<02:15, 135.60s/it]100%|##########| 6/6 [13:33<00:00, 134.04s/it]100%|##########| 6/6 [13:33<00:00, 135.50s/it]
+[32m[INFO][0m Requested to load MiniMaxH3VideoVAE
+[32m[INFO][0m Unloaded partially: 4145.63 MB freed, 979.38 MB remains loaded, 142.50 MB buffer reserved, lowvram patches: 0
+[32m[INFO][0m loaded completely; 3141.56 MB usable, 2665.86 MB loaded, full load: True
+[32m[INFO][0m [32mPrompt executed in 00:18:46[0m

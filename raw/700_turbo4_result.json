@@ -1,0 +1,333 @@
+{
+  "1b6406c1-8cb6-4ce7-be92-d0031fbb7ea9": {
+    "prompt": [
+      1,
+      "1b6406c1-8cb6-4ce7-be92-d0031fbb7ea9",
+      {
+        "1": {
+          "class_type": "UNETLoaderDisTorch2MultiGPU",
+          "inputs": {
+            "unet_name": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+            "weight_dtype": "default",
+            "compute_device": "cuda:1",
+            "virtual_vram_gb": 0.0,
+            "donor_device": "cuda:4",
+            "expert_mode_allocations": "cuda:1,1gb;cuda:2,6gb;cuda:3,6gb;cuda:0,1gb;cuda:4,*",
+            "eject_models": true
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoaderMultiGPU",
+          "inputs": {
+            "clip_name": "qwen3vl_4b_int8_convrot.safetensors",
+            "type": "krea2",
+            "device": "cuda:0"
+          }
+        },
+        "3": {
+          "inputs": {
+            "projection": "mmh3-4b-ClipProj-v3-mlp.safetensors",
+            "clip": [
+              "2",
+              0
+            ]
+          },
+          "class_type": "ClipProjApply",
+          "_meta": {
+            "title": "PROYECCI\u00d3N 4B \u2192 H3 5120"
+          }
+        },
+        "4": {
+          "class_type": "VAELoaderMultiGPU",
+          "inputs": {
+            "vae_name": "minimax_h3_video_vae_int8_convrot.safetensors",
+            "device": "cuda:0"
+          }
+        },
+        "5": {
+          "inputs": {
+            "attention": "pytorch attention",
+            "model": [
+              "19",
+              0
+            ]
+          },
+          "class_type": "ModelAttentionBackend",
+          "_meta": {
+            "title": "ATTENTION: COMFYKITCHEN"
+          }
+        },
+        "6": {
+          "inputs": {
+            "shift_video": 12.0,
+            "shift_audio": 3.0,
+            "model": [
+              "5",
+              0
+            ]
+          },
+          "class_type": "MiniMaxH3SigmaShift",
+          "_meta": {
+            "title": "ModelSamplingMiniMaxH3"
+          }
+        },
+        "7": {
+          "inputs": {
+            "enabled": false,
+            "blend_weight": 0.5,
+            "degree": 1,
+            "ridge_lambda": 0.1,
+            "window_size": 2.0,
+            "flex_window": 0.75,
+            "warmup_steps": 1,
+            "tail_actual_steps": 1,
+            "max_history": 8,
+            "debug": false,
+            "history_storage": "system_ram",
+            "bootstrap_first_forecast": true,
+            "anchor_residual_feedback": false,
+            "selective_rollback_correction": false,
+            "offline_smoothing_replay": false,
+            "audio_blend_weight": 0.0,
+            "offline_archive_storage": "system_ram",
+            "model_aware_mode": "off",
+            "model_aware_risk_threshold": 0.65,
+            "model_aware_trust_shrinkage": false,
+            "model_aware_replay_generic_correction": false,
+            "generic_correction_mode": "coordinate_rls",
+            "generic_correction_limiter": "hard_clip",
+            "generic_correction_limit": 0.4,
+            "generic_correction_attenuation": "no_attenuation",
+            "sa_pece_forecast_policy": "balanced",
+            "model": [
+              "6",
+              0
+            ]
+          },
+          "class_type": "SpectrumApplyMiniMaxH3",
+          "_meta": {
+            "title": "SPECTRUM ACTIVADO / RAM"
+          }
+        },
+        "8": {
+          "inputs": {
+            "prompt": "Create a cinematic 10-second video.\n\nA human-like toad character emerges from a dark room filled with thick drifting smoke and walks toward a gaming PC setup on a desk.\n\nBeside the gaming desk is a cat tree with two cats:\n\n* one tuxedo cat\n\n* one tabby cat\n\nAs the toad walks past, he casually pets both cats without stopping, then reaches the gaming chair and sits down.\n\nHe immediately begins playing a first-person shooter on the PC.\n\nFor the final shot, the camera rapidly pushes toward the gaming monitor. The screen fills the frame, but the camera does not stop at the monitor. Instead, it passes through the screen in a seamless cinematic transition, making it feel like the viewer is being sucked into the game.\n\nThe transition should end inside the first-person shooter battlefield in first-person perspective, as if the viewer has teleported directly from the gaming room into the battle.\n\nStyle:\n\n* cinematic\n\n* realistic / high-end game cinematic\n\n* dramatic smoke and lighting\n\n* confident, relaxed character movement\n\n* smooth camera motion\n\n* no dialogue\n\n* no subtitles\n\n* no on-screen text\n\n* cats remain clearly visible and anatomically correct\n\n* keep all actions readable despite the 10-second runtime\n\n* make the monitor transition feel fast, immersive, and seamless rather than like a simple camera zoom\n\nTiming:\n\n0\u20132 sec: Toad emerges through smoke.\n\n2\u20135 sec: Walks toward the gaming setup and pets both cats while passing.\n\n5\u20137 sec: Sits at the PC and starts playing the FPS.\n\n7\u201310 sec: Camera rushes toward the monitor, gets pulled through the screen, and transitions directly into the FPS battlefield in first-person view.",
+            "width": 1280,
+            "height": 704,
+            "length": 124,
+            "clip": [
+              "3",
+              0
+            ],
+            "vae": [
+              "4",
+              0
+            ]
+          },
+          "class_type": "MiniMaxH3ImageToVideo",
+          "_meta": {
+            "title": "FL2V: 608\u00d7352 / 124 FRAMES (~5 s) \u2014 CONECTA FIRST/LAST FRAME"
+          }
+        },
+        "9": {
+          "inputs": {
+            "model": [
+              "7",
+              0
+            ],
+            "conditioning": [
+              "8",
+              0
+            ]
+          },
+          "class_type": "BasicGuider",
+          "_meta": {
+            "title": "Basic Guider"
+          }
+        },
+        "10": {
+          "class_type": "MiniMaxH3TurboSampler",
+          "inputs": {}
+        },
+        "11": {
+          "inputs": {
+            "scheduler": "simple",
+            "steps": 4,
+            "denoise": 1.0,
+            "model": [
+              "7",
+              0
+            ]
+          },
+          "class_type": "BasicScheduler",
+          "_meta": {
+            "title": "SCHEDULER: SIMPLE / 20 STEPS"
+          }
+        },
+        "12": {
+          "inputs": {
+            "noise_seed": 0
+          },
+          "class_type": "RandomNoise",
+          "_meta": {
+            "title": "RandomNoise"
+          }
+        },
+        "13": {
+          "inputs": {
+            "noise": [
+              "12",
+              0
+            ],
+            "guider": [
+              "9",
+              0
+            ],
+            "sampler": [
+              "10",
+              0
+            ],
+            "sigmas": [
+              "11",
+              0
+            ],
+            "latent_image": [
+              "8",
+              1
+            ]
+          },
+          "class_type": "SamplerCustomAdvanced",
+          "_meta": {
+            "title": "SamplerCustomAdvanced"
+          }
+        },
+        "14": {
+          "inputs": {
+            "samples": [
+              "13",
+              0
+            ],
+            "vae": [
+              "4",
+              0
+            ]
+          },
+          "class_type": "VAEDecode",
+          "_meta": {
+            "title": "VAE Decode"
+          }
+        },
+        "15": {
+          "inputs": {
+            "fps": 24.0,
+            "bit_depth": "auto",
+            "color_space": "sRGB",
+            "images": [
+              "14",
+              0
+            ]
+          },
+          "class_type": "CreateVideo",
+          "_meta": {
+            "title": "Create Video"
+          }
+        },
+        "16": {
+          "inputs": {
+            "filename_prefix": "video/H3_Turbo4_1280x704_48GB",
+            "format": "auto",
+            "format.codec": "auto",
+            "codec": "auto",
+            "video": [
+              "15",
+              0
+            ]
+          },
+          "class_type": "SaveVideo",
+          "_meta": {
+            "title": "Save Video"
+          }
+        },
+        "19": {
+          "class_type": "MiniMaxH3TurboLoRA",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "lora_name": "minimax_h3_turbo_v4_step600_ema.safetensors",
+            "strength": 1.0,
+            "low_vram": false
+          }
+        }
+      },
+      {
+        "create_time": 1788983360767
+      },
+      [
+        "16"
+      ]
+    ],
+    "outputs": {
+      "16": {
+        "images": [
+          {
+            "filename": "H3_Turbo4_1280x704_48GB_00001_.mp4",
+            "subfolder": "video",
+            "type": "output"
+          }
+        ],
+        "animated": [
+          true
+        ]
+      }
+    },
+    "status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "1b6406c1-8cb6-4ce7-be92-d0031fbb7ea9",
+            "timestamp": 1788983360769
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "10",
+              "12",
+              "19"
+            ],
+            "prompt_id": "1b6406c1-8cb6-4ce7-be92-d0031fbb7ea9",
+            "timestamp": 1788983360774
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "1b6406c1-8cb6-4ce7-be92-d0031fbb7ea9",
+            "timestamp": 1788984224097
+          }
+        ]
+      ]
+    },
+    "meta": {
+      "16": {
+        "node_id": "16",
+        "display_node": "16",
+        "parent_node": null,
+        "real_node_id": "16"
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+﻿gpu_index,model,vram_mib,pci_bus,link,role,current_or_historical,source
+0,EVGA RTX 3070 XC3 Ultra,8192,01:00.0,PCIe Gen3 x16,compute and sampling,current,system_hardware.md
+1,EVGA RTX 3070 XC3 Ultra,8192,04:00.0,PCIe Gen3 x1,donor card,current,system_hardware.md
+2,EVGA RTX 3070 XC3 Ultra,8192,06:00.0,PCIe Gen3 x1,donor card,current,system_hardware.md
+3,EVGA RTX 3070 XC3 Ultra,8192,07:00.0,PCIe Gen3 x1,donor card,current,system_hardware.md

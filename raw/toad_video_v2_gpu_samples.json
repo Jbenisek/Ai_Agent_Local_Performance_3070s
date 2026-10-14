@@ -1,0 +1,542 @@
+[
+  {
+    "elapsed_monitor_seconds": 0.2,
+    "gpu_csv": "0, 2160, 58\n1, 352, 0\n2, 152, 0\n3, 152, 0\n4, 152, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 21.28,
+      "totalPageFile": 60.64,
+      "availPageFile": 21.54
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 20.4,
+    "gpu_csv": "0, 6343, 0\n1, 352, 0\n2, 152, 0\n3, 152, 0\n4, 152, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 38.57,
+      "totalPageFile": 60.64,
+      "availPageFile": 38.5
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 40.6,
+    "gpu_csv": "0, 6359, 0\n1, 500, 94\n2, 152, 0\n3, 152, 0\n4, 450, 31",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 35.87,
+      "totalPageFile": 60.64,
+      "availPageFile": 17.49
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 60.8,
+    "gpu_csv": "0, 6798, 1\n1, 796, 98\n2, 894, 63\n3, 152, 0\n4, 894, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 34.06,
+      "totalPageFile": 60.64,
+      "availPageFile": 15.61
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 81.0,
+    "gpu_csv": "0, 6798, 2\n1, 796, 98\n2, 2374, 53\n3, 152, 0\n4, 1042, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.43,
+      "totalPageFile": 60.64,
+      "availPageFile": 13.98
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 101.2,
+    "gpu_csv": "0, 6800, 2\n1, 796, 98\n2, 2670, 0\n3, 1338, 0\n4, 1338, 54",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 30.71,
+      "totalPageFile": 60.64,
+      "availPageFile": 12.25
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 121.4,
+    "gpu_csv": "0, 6800, 2\n1, 796, 92\n2, 2670, 0\n3, 2670, 0\n4, 1782, 1",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 28.9,
+      "totalPageFile": 60.64,
+      "availPageFile": 10.41
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 141.6,
+    "gpu_csv": "0, 7020, 0\n1, 2120, 98\n2, 3040, 71\n3, 2670, 0\n4, 2226, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 26.49,
+      "totalPageFile": 60.64,
+      "availPageFile": 6.62
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 161.7,
+    "gpu_csv": "0, 7022, 0\n1, 2120, 95\n2, 3856, 0\n3, 2966, 0\n4, 2300, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 24.15,
+      "totalPageFile": 63.67,
+      "availPageFile": 6.97
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 181.9,
+    "gpu_csv": "0, 7022, 0\n1, 2120, 93\n2, 3856, 0\n3, 3930, 0\n4, 2596, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 21.67,
+      "totalPageFile": 66.72,
+      "availPageFile": 7.21
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 202.1,
+    "gpu_csv": "0, 7246, 0\n1, 2120, 86\n2, 4864, 0\n3, 3930, 0\n4, 3270, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 19.53,
+      "totalPageFile": 68.8,
+      "availPageFile": 7.44
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 222.3,
+    "gpu_csv": "0, 7252, 0\n1, 2120, 98\n2, 5760, 0\n3, 4826, 30\n4, 3382, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 17.68,
+      "totalPageFile": 70.82,
+      "availPageFile": 7.6
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 242.5,
+    "gpu_csv": "0, 7245, 0\n1, 2120, 92\n2, 5760, 0\n3, 5722, 0\n4, 4752, 34",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 15.49,
+      "totalPageFile": 72.84,
+      "availPageFile": 7.41
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 262.7,
+    "gpu_csv": "0, 7355, 1\n1, 2120, 94\n2, 6368, 0\n3, 6140, 20\n4, 5574, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 13.48,
+      "totalPageFile": 74.87,
+      "availPageFile": 7.51
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 282.9,
+    "gpu_csv": "0, 7355, 2\n1, 7440, 91\n2, 6368, 0\n3, 6368, 0\n4, 5852, 43",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.64,
+      "totalPageFile": 68.7,
+      "availPageFile": 15.31
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 303.0,
+    "gpu_csv": "0, 7362, 2\n1, 7440, 92\n2, 6368, 0\n3, 6368, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.63,
+      "totalPageFile": 66.97,
+      "availPageFile": 13.56
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 323.2,
+    "gpu_csv": "0, 7357, 2\n1, 7440, 95\n2, 6368, 0\n3, 6370, 65\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.64,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.52
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 343.4,
+    "gpu_csv": "0, 7355, 4\n1, 7440, 89\n2, 6368, 0\n3, 6370, 61\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.64,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.52
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 363.6,
+    "gpu_csv": "0, 7355, 8\n1, 7440, 93\n2, 6368, 0\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.64,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.53
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 383.8,
+    "gpu_csv": "0, 7355, 0\n1, 7440, 47\n2, 6370, 99\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.64,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.52
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 403.9,
+    "gpu_csv": "0, 7355, 0\n1, 7440, 47\n2, 6370, 99\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.62,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.51
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 424.1,
+    "gpu_csv": "0, 7355, 0\n1, 7440, 93\n2, 6370, 0\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.62,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.49
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 444.3,
+    "gpu_csv": "0, 7355, 38\n1, 7440, 93\n2, 6370, 0\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.63,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.5
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 464.5,
+    "gpu_csv": "0, 7355, 1\n1, 7440, 87\n2, 6370, 0\n3, 6370, 0\n4, 5852, 51",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.63,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.51
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 484.7,
+    "gpu_csv": "0, 7362, 8\n1, 7440, 90\n2, 6370, 0\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.62,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.49
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 504.8,
+    "gpu_csv": "0, 7355, 0\n1, 7440, 94\n2, 6370, 0\n3, 6370, 24\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.62,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.5
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 525.0,
+    "gpu_csv": "0, 7355, 0\n1, 7440, 93\n2, 6370, 0\n3, 6370, 69\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.62,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.49
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 545.2,
+    "gpu_csv": "0, 7355, 1\n1, 7440, 41\n2, 6370, 99\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.59,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.47
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 565.3,
+    "gpu_csv": "0, 7355, 2\n1, 7440, 100\n2, 6370, 0\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.61,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.5
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 585.5,
+    "gpu_csv": "0, 7363, 2\n1, 7440, 43\n2, 6370, 99\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.6,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.47
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 605.7,
+    "gpu_csv": "0, 7355, 2\n1, 7440, 100\n2, 6370, 0\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.6,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.48
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 625.8,
+    "gpu_csv": "0, 7355, 2\n1, 7440, 77\n2, 6370, 0\n3, 6370, 0\n4, 5852, 85",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.6,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.48
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 646.0,
+    "gpu_csv": "0, 7355, 2\n1, 7440, 74\n2, 6370, 0\n3, 6370, 0\n4, 5852, 98",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.62,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.5
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 666.2,
+    "gpu_csv": "0, 7355, 2\n1, 7440, 92\n2, 6370, 0\n3, 6370, 93\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.6,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.49
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 686.3,
+    "gpu_csv": "0, 7355, 1\n1, 7440, 94\n2, 6370, 0\n3, 6370, 50\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.61,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.5
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 706.5,
+    "gpu_csv": "0, 7355, 0\n1, 7440, 49\n2, 6370, 85\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.61,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.49
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 726.7,
+    "gpu_csv": "0, 7358, 0\n1, 7440, 66\n2, 6370, 58\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.61,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.48
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 746.8,
+    "gpu_csv": "0, 7355, 0\n1, 7440, 49\n2, 6370, 99\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.61,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.5
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 767.0,
+    "gpu_csv": "0, 7355, 0\n1, 7440, 100\n2, 6370, 0\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.61,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.5
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 787.2,
+    "gpu_csv": "0, 7350, 0\n1, 7440, 70\n2, 6370, 0\n3, 6370, 0\n4, 5852, 98",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.61,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.51
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 807.3,
+    "gpu_csv": "0, 7350, 8\n1, 7440, 88\n2, 6370, 0\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.66,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.56
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 827.5,
+    "gpu_csv": "0, 7377, 11\n1, 7440, 87\n2, 6370, 0\n3, 6370, 61\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.65,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.49
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 847.6,
+    "gpu_csv": "0, 7358, 11\n1, 7440, 89\n2, 6370, 0\n3, 6370, 66\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.65,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.53
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 867.8,
+    "gpu_csv": "0, 7352, 2\n1, 7440, 43\n2, 6370, 98\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.65,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.55
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 888.0,
+    "gpu_csv": "0, 7359, 2\n1, 7440, 100\n2, 6370, 0\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.64,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.52
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 908.1,
+    "gpu_csv": "0, 7351, 0\n1, 7440, 93\n2, 6370, 0\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.65,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.54
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 928.3,
+    "gpu_csv": "0, 7351, 2\n1, 7440, 100\n2, 6370, 0\n3, 6370, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 32.65,
+      "totalPageFile": 66.9,
+      "availPageFile": 13.54
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 948.5,
+    "gpu_csv": "0, 6957, 98\n1, 1396, 0\n2, 6368, 0\n3, 6368, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 31.62,
+      "totalPageFile": 66.9,
+      "availPageFile": 17.25
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 968.6,
+    "gpu_csv": "0, 7115, 98\n1, 1396, 0\n2, 6368, 0\n3, 6368, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 31.48,
+      "totalPageFile": 62.32,
+      "availPageFile": 12.61
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 988.8,
+    "gpu_csv": "0, 7119, 98\n1, 1396, 0\n2, 6368, 0\n3, 6368, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 31.24,
+      "totalPageFile": 62.32,
+      "availPageFile": 12.59
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 1009.0,
+    "gpu_csv": "0, 7117, 98\n1, 1396, 0\n2, 6368, 0\n3, 6368, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 31.0,
+      "totalPageFile": 62.32,
+      "availPageFile": 12.58
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 1029.1,
+    "gpu_csv": "0, 7117, 98\n1, 1396, 0\n2, 6368, 0\n3, 6368, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 30.77,
+      "totalPageFile": 62.32,
+      "availPageFile": 12.58
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 1049.3,
+    "gpu_csv": "0, 7116, 11\n1, 1396, 0\n2, 6368, 0\n3, 6368, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 30.51,
+      "totalPageFile": 62.32,
+      "availPageFile": 12.56
+    }
+  },
+  {
+    "elapsed_monitor_seconds": 1069.5,
+    "gpu_csv": "0, 6712, 0\n1, 1396, 0\n2, 6368, 0\n3, 6368, 0\n4, 5852, 0",
+    "windows_memory_gib": {
+      "totalPhys": 47.87,
+      "availPhys": 30.52,
+      "totalPageFile": 62.32,
+      "availPageFile": 12.98
+    }
+  }
+]

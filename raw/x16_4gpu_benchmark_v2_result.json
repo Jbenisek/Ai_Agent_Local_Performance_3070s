@@ -1,0 +1,326 @@
+{
+    "435a6b24-ef98-4004-966f-d2a4704afbf1":  {
+                                                 "prompt":  [
+                                                                0,
+                                                                "435a6b24-ef98-4004-966f-d2a4704afbf1",
+                                                                {
+                                                                    "1":  {
+                                                                              "class_type":  "UNETLoaderDisTorch2MultiGPU",
+                                                                              "inputs":  {
+                                                                                             "unet_name":  "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+                                                                                             "weight_dtype":  "default",
+                                                                                             "compute_device":  "cuda:0",
+                                                                                             "virtual_vram_gb":  0.0,
+                                                                                             "donor_device":  "cuda:3",
+                                                                                             "expert_mode_allocations":  "cuda:0,0.5gb;cuda:1,6.5gb;cuda:2,6.5gb;cuda:3,*",
+                                                                                             "eject_models":  true
+                                                                                         }
+                                                                          },
+                                                                    "2":  {
+                                                                              "class_type":  "CLIPLoaderMultiGPU",
+                                                                              "inputs":  {
+                                                                                             "clip_name":  "qwen3vl_4b_int8_convrot.safetensors",
+                                                                                             "type":  "krea2",
+                                                                                             "device":  "cuda:0"
+                                                                                         }
+                                                                          },
+                                                                    "3":  {
+                                                                              "inputs":  {
+                                                                                             "projection":  "mmh3-4b-ClipProj-v3-mlp.safetensors",
+                                                                                             "clip":  [
+                                                                                                          "2",
+                                                                                                          0
+                                                                                                      ]
+                                                                                         },
+                                                                              "class_type":  "ClipProjApply",
+                                                                              "_meta":  {
+                                                                                            "title":  "PROYECCIÃƒâ€œN 4B Ã¢â€ â€™ H3 5120"
+                                                                                        }
+                                                                          },
+                                                                    "4":  {
+                                                                              "class_type":  "VAELoaderMultiGPU",
+                                                                              "inputs":  {
+                                                                                             "vae_name":  "minimax_h3_video_vae_int8_convrot.safetensors",
+                                                                                             "device":  "cuda:0"
+                                                                                         }
+                                                                          },
+                                                                    "5":  {
+                                                                              "inputs":  {
+                                                                                             "attention":  "pytorch attention",
+                                                                                             "model":  [
+                                                                                                           "19",
+                                                                                                           0
+                                                                                                       ]
+                                                                                         },
+                                                                              "class_type":  "ModelAttentionBackend",
+                                                                              "_meta":  {
+                                                                                            "title":  "ATTENTION: COMFYKITCHEN"
+                                                                                        }
+                                                                          },
+                                                                    "6":  {
+                                                                              "inputs":  {
+                                                                                             "shift_video":  12.0,
+                                                                                             "shift_audio":  3.0,
+                                                                                             "model":  [
+                                                                                                           "5",
+                                                                                                           0
+                                                                                                       ]
+                                                                                         },
+                                                                              "class_type":  "MiniMaxH3SigmaShift",
+                                                                              "_meta":  {
+                                                                                            "title":  "ModelSamplingMiniMaxH3"
+                                                                                        }
+                                                                          },
+                                                                    "7":  {
+                                                                              "inputs":  {
+                                                                                             "enabled":  false,
+                                                                                             "blend_weight":  0.5,
+                                                                                             "degree":  1,
+                                                                                             "ridge_lambda":  0.1,
+                                                                                             "window_size":  2.0,
+                                                                                             "flex_window":  0.75,
+                                                                                             "warmup_steps":  1,
+                                                                                             "tail_actual_steps":  1,
+                                                                                             "max_history":  8,
+                                                                                             "debug":  false,
+                                                                                             "history_storage":  "system_ram",
+                                                                                             "bootstrap_first_forecast":  true,
+                                                                                             "anchor_residual_feedback":  false,
+                                                                                             "selective_rollback_correction":  false,
+                                                                                             "offline_smoothing_replay":  false,
+                                                                                             "audio_blend_weight":  0.0,
+                                                                                             "offline_archive_storage":  "system_ram",
+                                                                                             "model_aware_mode":  "off",
+                                                                                             "model_aware_risk_threshold":  0.65,
+                                                                                             "model_aware_trust_shrinkage":  false,
+                                                                                             "model_aware_replay_generic_correction":  false,
+                                                                                             "generic_correction_mode":  "coordinate_rls",
+                                                                                             "generic_correction_limiter":  "hard_clip",
+                                                                                             "generic_correction_limit":  0.4,
+                                                                                             "generic_correction_attenuation":  "no_attenuation",
+                                                                                             "sa_pece_forecast_policy":  "balanced",
+                                                                                             "model":  [
+                                                                                                           "6",
+                                                                                                           0
+                                                                                                       ]
+                                                                                         },
+                                                                              "class_type":  "SpectrumApplyMiniMaxH3",
+                                                                              "_meta":  {
+                                                                                            "title":  "SPECTRUM ACTIVADO / RAM"
+                                                                                        }
+                                                                          },
+                                                                    "8":  {
+                                                                              "inputs":  {
+                                                                                             "prompt":  "Create a cinematic 10-second video.\n\nA human-like toad character emerges from a dark room filled with thick drifting smoke and walks toward a gaming PC setup on a desk.\n\nBeside the gaming desk is a cat tree with two cats:\n\n* one tuxedo cat\n\n* one tabby cat\n\nAs the toad walks past, he casually pets both cats without stopping, then reaches the gaming chair and sits down.\n\nHe immediately begins playing a first-person shooter on the PC.\n\nFor the final shot, the camera rapidly pushes toward the gaming monitor. The screen fills the frame, but the camera does not stop at the monitor. Instead, it passes through the screen in a seamless cinematic transition, making it feel like the viewer is being sucked into the game.\n\nThe transition should end inside the first-person shooter battlefield in first-person perspective, as if the viewer has teleported directly from the gaming room into the battle.\n\nStyle:\n\n* cinematic\n\n* realistic / high-end game cinematic\n\n* dramatic smoke and lighting\n\n* confident, relaxed character movement\n\n* smooth camera motion\n\n* no dialogue\n\n* no subtitles\n\n* no on-screen text\n\n* cats remain clearly visible and anatomically correct\n\n* keep all actions readable despite the 10-second runtime\n\n* make the monitor transition feel fast, immersive, and seamless rather than like a simple camera zoom\n\nTiming:\n\n0Ã¢â‚¬â€œ2 sec: Toad emerges through smoke.\n\n2Ã¢â‚¬â€œ5 sec: Walks toward the gaming setup and pets both cats while passing.\n\n5Ã¢â‚¬â€œ7 sec: Sits at the PC and starts playing the FPS.\n\n7Ã¢â‚¬â€œ10 sec: Camera rushes toward the monitor, gets pulled through the screen, and transitions directly into the FPS battlefield in first-person view.",
+                                                                                             "width":  1280,
+                                                                                             "height":  704,
+                                                                                             "length":  124,
+                                                                                             "clip":  [
+                                                                                                          "3",
+                                                                                                          0
+                                                                                                      ],
+                                                                                             "vae":  [
+                                                                                                         "4",
+                                                                                                         0
+                                                                                                     ]
+                                                                                         },
+                                                                              "class_type":  "MiniMaxH3ImageToVideo",
+                                                                              "_meta":  {
+                                                                                            "title":  "FL2V: 608Ãƒâ€”352 / 124 FRAMES (~5 s) Ã¢â‚¬â€ CONECTA FIRST/LAST FRAME"
+                                                                                        }
+                                                                          },
+                                                                    "9":  {
+                                                                              "inputs":  {
+                                                                                             "model":  [
+                                                                                                           "7",
+                                                                                                           0
+                                                                                                       ],
+                                                                                             "conditioning":  [
+                                                                                                                  "8",
+                                                                                                                  0
+                                                                                                              ]
+                                                                                         },
+                                                                              "class_type":  "BasicGuider",
+                                                                              "_meta":  {
+                                                                                            "title":  "Basic Guider"
+                                                                                        }
+                                                                          },
+                                                                    "10":  {
+                                                                               "class_type":  "MiniMaxH3TurboSampler",
+                                                                               "inputs":  {
+
+                                                                                          }
+                                                                           },
+                                                                    "11":  {
+                                                                               "inputs":  {
+                                                                                              "scheduler":  "simple",
+                                                                                              "steps":  4,
+                                                                                              "denoise":  1.0,
+                                                                                              "model":  [
+                                                                                                            "7",
+                                                                                                            0
+                                                                                                        ]
+                                                                                          },
+                                                                               "class_type":  "BasicScheduler",
+                                                                               "_meta":  {
+                                                                                             "title":  "SCHEDULER: SIMPLE / 20 STEPS"
+                                                                                         }
+                                                                           },
+                                                                    "12":  {
+                                                                               "inputs":  {
+                                                                                              "noise_seed":  0
+                                                                                          },
+                                                                               "class_type":  "RandomNoise",
+                                                                               "_meta":  {
+                                                                                             "title":  "RandomNoise"
+                                                                                         }
+                                                                           },
+                                                                    "13":  {
+                                                                               "inputs":  {
+                                                                                              "noise":  [
+                                                                                                            "12",
+                                                                                                            0
+                                                                                                        ],
+                                                                                              "guider":  [
+                                                                                                             "9",
+                                                                                                             0
+                                                                                                         ],
+                                                                                              "sampler":  [
+                                                                                                              "10",
+                                                                                                              0
+                                                                                                          ],
+                                                                                              "sigmas":  [
+                                                                                                             "11",
+                                                                                                             0
+                                                                                                         ],
+                                                                                              "latent_image":  [
+                                                                                                                   "8",
+                                                                                                                   1
+                                                                                                               ]
+                                                                                          },
+                                                                               "class_type":  "SamplerCustomAdvanced",
+                                                                               "_meta":  {
+                                                                                             "title":  "SamplerCustomAdvanced"
+                                                                                         }
+                                                                           },
+                                                                    "14":  {
+                                                                               "inputs":  {
+                                                                                              "samples":  [
+                                                                                                              "13",
+                                                                                                              0
+                                                                                                          ],
+                                                                                              "vae":  [
+                                                                                                          "4",
+                                                                                                          0
+                                                                                                      ]
+                                                                                          },
+                                                                               "class_type":  "VAEDecode",
+                                                                               "_meta":  {
+                                                                                             "title":  "VAE Decode"
+                                                                                         }
+                                                                           },
+                                                                    "15":  {
+                                                                               "inputs":  {
+                                                                                              "fps":  24.0,
+                                                                                              "bit_depth":  "auto",
+                                                                                              "color_space":  "sRGB",
+                                                                                              "images":  [
+                                                                                                             "14",
+                                                                                                             0
+                                                                                                         ]
+                                                                                          },
+                                                                               "class_type":  "CreateVideo",
+                                                                               "_meta":  {
+                                                                                             "title":  "Create Video"
+                                                                                         }
+                                                                           },
+                                                                    "16":  {
+                                                                               "inputs":  {
+                                                                                              "filename_prefix":  "video/H3_Turbo4_1280x704_4GPU_x16_V2",
+                                                                                              "format":  "auto",
+                                                                                              "format.codec":  "auto",
+                                                                                              "codec":  "auto",
+                                                                                              "video":  [
+                                                                                                            "15",
+                                                                                                            0
+                                                                                                        ]
+                                                                                          },
+                                                                               "class_type":  "SaveVideo",
+                                                                               "_meta":  {
+                                                                                             "title":  "Save Video"
+                                                                                         }
+                                                                           },
+                                                                    "19":  {
+                                                                               "class_type":  "MiniMaxH3TurboLoRA",
+                                                                               "inputs":  {
+                                                                                              "model":  [
+                                                                                                            "1",
+                                                                                                            0
+                                                                                                        ],
+                                                                                              "lora_name":  "minimax_h3_turbo_v4_step600_ema.safetensors",
+                                                                                              "strength":  1.0,
+                                                                                              "low_vram":  false
+                                                                                          }
+                                                                           }
+                                                                },
+                                                                {
+                                                                    "create_time":  1789166081872
+                                                                },
+                                                                [
+                                                                    "16"
+                                                                ]
+                                                            ],
+                                                 "outputs":  {
+                                                                 "16":  {
+                                                                            "images":  [
+                                                                                           {
+                                                                                               "filename":  "H3_Turbo4_1280x704_4GPU_x16_V2_00001_.mp4",
+                                                                                               "subfolder":  "video",
+                                                                                               "type":  "output"
+                                                                                           }
+                                                                                       ],
+                                                                            "animated":  [
+                                                                                             true
+                                                                                         ]
+                                                                        }
+                                                             },
+                                                 "status":  {
+                                                                "status_str":  "success",
+                                                                "completed":  true,
+                                                                "messages":  [
+                                                                                 [
+                                                                                     "execution_start",
+                                                                                     {
+                                                                                         "prompt_id":  "435a6b24-ef98-4004-966f-d2a4704afbf1",
+                                                                                         "timestamp":  1789166081872
+                                                                                     }
+                                                                                 ],
+                                                                                 [
+                                                                                     "execution_cached",
+                                                                                     {
+                                                                                         "nodes":  [
+
+                                                                                                   ],
+                                                                                         "prompt_id":  "435a6b24-ef98-4004-966f-d2a4704afbf1",
+                                                                                         "timestamp":  1789166081887
+                                                                                     }
+                                                                                 ],
+                                                                                 [
+                                                                                     "execution_success",
+                                                                                     {
+                                                                                         "prompt_id":  "435a6b24-ef98-4004-966f-d2a4704afbf1",
+                                                                                         "timestamp":  1789167012700
+                                                                                     }
+                                                                                 ]
+                                                                             ]
+                                                            },
+                                                 "meta":  {
+                                                              "16":  {
+                                                                         "node_id":  "16",
+                                                                         "display_node":  "16",
+                                                                         "parent_node":  null,
+                                                                         "real_node_id":  "16"
+                                                                     }
+                                                          }
+                                             }
+}

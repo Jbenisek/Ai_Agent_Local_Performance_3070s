@@ -1,0 +1,11 @@
+﻿workload,configuration,resolution,frames,fps,steps,metric,value,unit,comparison_or_notes,source
+H3 video,original single GPU,608x352,124,24,20,end_to_end,6648.834,s,old baseline,optimization_report.md
+H3 video,H3 Turbo6 optimized 48 GB run,1024x576,124,24,6,sampling,813,s,not an isolated multigpu speedup; changed model and runtime conditions,optimization_report.md
+H3 video,H3 Turbo6 optimized 48 GB run,1024x576,124,24,6,end_to_end,1126.389,s,PyAV verified output,optimization_report.md
+H3 video,H3 Turbo4 four-card donor layout,1280x704,124,24,4,sampling,710,s,earlier four-card run,optimization_report.md
+H3 video,H3 Turbo4 four-card donor layout,1280x704,124,24,4,end_to_end,863.328,s,PyAV verified output,optimization_report.md
+H3 video,H3 Turbo4 GPU0 x16 compute plus GPUs1-3 x1 donors cold,1280x704,124,24,4,sampling_average,176.88,s,2026-09-11 four-GPU x16 benchmark,optimization_report.md
+H3 video,H3 Turbo4 GPU0 x16 compute plus GPUs1-3 x1 donors cold,1280x704,124,24,4,end_to_end,930,s,approximately 15m30 cold run,optimization_report.md
+H3 video,H3 Turbo4 earlier five-card all-x1 donor comparison,1280x704,124,24,4,sampling_average,177.66,s,warm comparison; effectively tied with x16 run,optimization_report.md
+H3 video,H3 Toad four-card workflow,832x480,243,24,4,sampling_approx,670,s,10-second test; PyAV verified 243 frames,optimization_report.md
+H3 video,H3 Toad four-card workflow,832x480,243,24,4,end_to_end,1053.176,s,10-second test,optimization_report.md

@@ -1,0 +1,3 @@
+﻿experiment,test,clock_setting,generated_rate,value_unit,multiplier,notes,source
+clock correction,fixed 1024-token test,observed low clocks,5.706,tok/s,1.0,slow state before correction,MODEL_PERFORMANCE_REPORT.md
+clock correction,fixed 1024-token test,"nvidia-smi -lgc 1500,1900",38.584,tok/s,6.76,outputs were byte-identical; restored with nvidia-smi -rgc,MODEL_PERFORMANCE_REPORT.md
